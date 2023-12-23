@@ -19,5 +19,11 @@ variable "aws_region" {
 variable "instance_type" {
   type        = string
   description = "Type for EC2 Instnace"
-  default     = "t3.micro"
+  default     = "t2.micro"
+}
+
+variable "server_port" {
+  description = "The port the server will use for HTTP requests"
+  type        = number
+  default     = 8080
 }
